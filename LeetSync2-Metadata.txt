@@ -1,3 +1,4 @@
 3379-transformed-array|Easy|1734152400000
 1792-maximum-average-pass-ratio|Medium|1734238800000
 1014-best-sightseeing-pair|Medium|1735275600000
+28-find-the-index-of-the-first-occurrence-in-a-string|Easy|1735362000000
