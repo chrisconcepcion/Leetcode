@@ -2,23 +2,31 @@
 # @param {String} needle
 # @return {Integer}
 def str_str(haystack, needle)
-    j = needle.size - 1
-    i = j
-    while i < haystack.size
-        dupped_i = i
-        while haystack[dupped_i] == needle[j] and j > -1
-            j -= 1
-            dupped_i -= 1
-        end
+  return 0 if needle.empty?
+  
+  # Create a bad character table
+  bad_char = {}
+  needle.each_char.with_index do |char, index|
+    bad_char[char] = index
+  end
 
-        if j == -1
-            return dupped_i + 1
-        else
-            j = needle.size - 1
-        end
-        
-        i += 1
+  i = 0
+  while i <= haystack.length - needle.length
+    j = needle.length - 1
+
+    while j >= 0 && haystack[i + j] == needle[j]
+      j -= 1
     end
-    
-    -1
+
+    if j < 0
+      return i  # Match found
+    else
+      # Get the last occurrence of the bad character in the needle
+      bad_char_shift = bad_char[haystack[i + j]] || -1
+      shift = [j - bad_char_shift, 1].max  # Ensure at least a shift of 1
+      i += shift
+    end
+  end
+
+  -1  # No match found
 end
