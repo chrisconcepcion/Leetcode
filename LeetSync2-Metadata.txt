@@ -2,3 +2,4 @@
 1792-maximum-average-pass-ratio|Medium|1734238800000
 1014-best-sightseeing-pair|Medium|1735275600000
 28-find-the-index-of-the-first-occurrence-in-a-string|Easy|1735362000000
+3042-count-prefix-and-suffix-pairs-i|Easy|1736312400000
