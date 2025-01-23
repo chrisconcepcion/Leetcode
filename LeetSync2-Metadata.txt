@@ -4,3 +4,4 @@
 28-find-the-index-of-the-first-occurrence-in-a-string|Easy|1735362000000
 3042-count-prefix-and-suffix-pairs-i|Easy|1736312400000
 2657-find-the-prefix-common-array-of-two-arrays|Medium|1736830800000
+1267-count-servers-that-communicate|Medium|1737608400000
